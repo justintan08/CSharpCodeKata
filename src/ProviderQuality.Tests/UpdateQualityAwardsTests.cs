@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ProviderQuality.Console;
+using ProviderQuality;
 
 namespace ProviderQuality.Tests
 {
@@ -15,7 +16,7 @@ namespace ProviderQuality.Tests
             {
                 Awards = new List<Award>
                 {
-                    new Award {Name = "Blue Distinction Plus", SellIn = 0, Quality = 80}
+                    new BlueDistinctionPlus(0,80)
                 }
             };
 
